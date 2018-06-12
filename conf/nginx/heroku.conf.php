@@ -20,6 +20,10 @@ http {
 
 	fastcgi_buffers 256 4k;
 
+	fastcgi_cache_path /app/cache levels=1:2 keys_zone=appcache:100m inactive=60m;
+	fastcgi_cache_key "$scheme$request_method$host$request_uri";
+	fastcgi_ignore_headers Cache-Control Expires Set-Cookie;
+
 	# define an easy to reference name that can be used in fastgi_pass
 	upstream heroku-fcgi {
 		#server 127.0.0.1:4999 max_fails=3 fail_timeout=3s;
