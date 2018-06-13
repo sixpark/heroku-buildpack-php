@@ -26,8 +26,8 @@ http {
 
 	map $request_uri $no_cache_uri {
 	    default 0;
-	    ~/\/admin\/.*/  1;
-	    ~/\/cms\/.*/  1;
+	    ~^/admin 1;
+	    ~^/cms 1;
 	}
 
 	# define an easy to reference name that can be used in fastgi_pass
