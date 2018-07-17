@@ -28,6 +28,7 @@ http {
 	    default 0;
 	    ~^/admin 1;
 	    ~^/cms 1;
+	    ~^/contact 1;
 	}
 
 	# define an easy to reference name that can be used in fastgi_pass
