@@ -1,5 +1,42 @@
 # heroku-buildpack-php CHANGELOG
 
+## v164 (2019-10-24)
+
+### ADD
+
+- PHP/7.3.11 [David Zuelke]
+- PHP/7.2.24 [David Zuelke]
+- PHP/7.1.33 [David Zuelke]
+- ext-newrelic/9.2.0.247 [David Zuelke]
+- ext-memcached/3.1.4 [David Zuelke]
+- ext-rdkafka/4.0.0 [David Zuelke]
+
+### CHG
+
+- Bump `heroku-16.Dockerfile` and `heroku-18.Dockerfile` to tag v18 [David Zuelke]
+- librdkafka/1.2.1 [David Zuelke]
+
+## v163 (2019-10-01)
+
+### CHG
+
+- Pin `heroku-18.Dockerfile` to use `heroku/heroku:18-build.v16` to ensure builds against libssl 1.1.0 until Private Spaces are fully upgraded [David Zuelke]
+
+## v162 (2019-09-27)
+
+### ADD
+
+- PHP/7.2.23 [David Zuelke]
+- PHP/7.3.10 [David Zuelke]
+- ext-newrelic/9.1.0.246 [David Zuelke]
+- ext-mongodb/1.6.0 (PHP 5.6+ only) [David Zuelke]
+- ext-blackfire/1.27.1 [David Zuelke]
+- Nginx/1.16.1 [David Zuelke]
+
+### CHG
+
+- librdkafka/1.2.0 [David Zuelke]
+
 ## v161 (2019-08-30)
 
 ### ADD
